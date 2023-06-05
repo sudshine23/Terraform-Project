@@ -128,3 +128,18 @@ variable "ec2_keypair_name" {
   type = string
   
 }
+
+#Route 53 vriables
+variable "domain_name" {
+  default = "betemaujkardi.com"
+  description = "domain name"
+  type = string
+  
+}
+
+variable "record_name" {
+  default = "www"
+  description = "sub-domain name"
+  type = string
+  
+}
