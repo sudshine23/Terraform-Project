@@ -95,3 +95,36 @@ variable "operator-email" {
   type = string
   
 }
+
+#Auto scaling group vriables
+variable "launch_template_name" {
+  default = "dev-launch-template"
+  description = "name of the launch template"
+  type = string
+  
+}
+
+
+#AMI vriables
+variable "ec2_image_id" {
+  default = "ami-03380b9fcc3d4867c"
+  description = "AMI ID"
+  type = string
+  
+}
+
+#Instance type vriables
+variable "ec2_instance_type" {
+  default = "t2.micro"
+  description = "ec2 instance type"
+  type = string
+  
+}
+
+#Keypair vriables
+variable "ec2_keypair_name" {
+  default = "MyEc2Key"
+  description = "My key pair name"
+  type = string
+  
+}
